@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "275a877a-2634-461d-aa0e-3f499caf0d59",
+		"name": "Better_Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21013395"
+	},
+	"item": [
+		{
+			"name": "LeisureCentreController",
+			"item": [
+				{
+					"name": "Add Leisure Centre",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Abbey Leisure Complex\",\r\n    \"location\": \"Whitehill Road\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9080/leisureCentre/add",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"leisureCentre",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Leisure Centres",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9080/leisureCentre/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"leisureCentre",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Leisure Centre",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9080/leisureCentre/delete?leisureCentreName",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"leisureCentre",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "leisureCentreName",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete All Leisure Centres",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9080/activity/deleteAll",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"activity",
+								"deleteAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ActivityController",
+			"item": [
+				{
+					"name": "Add Activity To Centre",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Yoga\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9080/activity/add?LeisureCentreName=Waterfront",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"activity",
+								"add"
+							],
+							"query": [
+								{
+									"key": "LeisureCentreName",
+									"value": "Waterfront"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Activities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9080/activity/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"activity",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Activity",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9080/activity/delete?activityName&LeisureCentreName",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"activity",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "activityName",
+									"value": null
+								},
+								{
+									"key": "LeisureCentreName",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete All Activities",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9080/leisureCentre/deleteAll",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"leisureCentre",
+								"deleteAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Dates",
+			"item": [
+				{
+					"name": "Get Dates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9080/getDates",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"getDates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TimeSlotController",
+			"item": [
+				{
+					"name": "Get TimeSlots",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9080/timeSlot/id",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"timeSlot",
+								"id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add TimeSlot",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:9080/timeSlot/add?startTime&endTime&avalability&acivityDateId",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"timeSlot",
+								"add"
+							],
+							"query": [
+								{
+									"key": "startTime",
+									"value": null
+								},
+								{
+									"key": "endTime",
+									"value": null
+								},
+								{
+									"key": "avalability",
+									"value": null
+								},
+								{
+									"key": "acivityDateId",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Book Timeslot",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:9080/book/activity?id=5&booked=true",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"book",
+								"activity"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5"
+								},
+								{
+									"key": "booked",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
