@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Abbey Leisure Complex\",\r\n    \"location\": \"Whitehill Road\"\r\n}",
+							"raw": "{\r\n    \"name\":\"SUjans gym\",\r\n    \"location\": \"Woolwich\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -24,11 +24,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:9080/leisureCentre/add",
+							"raw": "https://betterbackend.sujangcloud.uk/leisureCentre/add",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"betterbackend",
+								"sujangcloud",
+								"uk"
 							],
-							"port": "9080",
 							"path": [
 								"leisureCentre",
 								"add"
@@ -43,11 +45,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:9080/leisureCentre/getAll",
+							"raw": "https://betterbackend.sujangcloud.uk/leisureCentre/getAll",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"betterbackend",
+								"sujangcloud",
+								"uk"
 							],
-							"port": "9080",
 							"path": [
 								"leisureCentre",
 								"getAll"
@@ -62,11 +66,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:9080/leisureCentre/delete?leisureCentreName",
+							"raw": "https://betterbackend.sujangcloud.uk/leisureCentre/delete?leisureCentreName=SUjans gym",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"betterbackend",
+								"sujangcloud",
+								"uk"
 							],
-							"port": "9080",
 							"path": [
 								"leisureCentre",
 								"delete"
@@ -74,7 +80,7 @@
 							"query": [
 								{
 									"key": "leisureCentreName",
-									"value": null
+									"value": "SUjans gym"
 								}
 							]
 						}
@@ -87,13 +93,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:9080/activity/deleteAll",
+							"raw": "https://betterbackend.sujangcloud.uk/leisureCentre/deleteAll",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"betterbackend",
+								"sujangcloud",
+								"uk"
 							],
-							"port": "9080",
 							"path": [
-								"activity",
+								"leisureCentre",
 								"deleteAll"
 							]
 						}
@@ -112,7 +120,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Yoga\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Gambling\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -120,11 +128,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:9080/activity/add?LeisureCentreName=Waterfront",
+							"raw": "https://betterbackend.sujangcloud.uk/activity/add?LeisureCentreName=SUjans gym",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"betterbackend",
+								"sujangcloud",
+								"uk"
 							],
-							"port": "9080",
 							"path": [
 								"activity",
 								"add"
@@ -132,7 +142,7 @@
 							"query": [
 								{
 									"key": "LeisureCentreName",
-									"value": "Waterfront"
+									"value": "SUjans gym"
 								}
 							]
 						}
@@ -145,11 +155,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:9080/activity/getAll",
+							"raw": "https://betterbackend.sujangcloud.uk/activity/getAll",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"betterbackend",
+								"sujangcloud",
+								"uk"
 							],
-							"port": "9080",
 							"path": [
 								"activity",
 								"getAll"
@@ -164,23 +176,25 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:9080/activity/delete?activityName&LeisureCentreName",
+							"raw": "https://betterbackend.sujangcloud.uk/activity/delete?name=racing club&leisureCentreName=SUjans gym",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"betterbackend",
+								"sujangcloud",
+								"uk"
 							],
-							"port": "9080",
 							"path": [
 								"activity",
 								"delete"
 							],
 							"query": [
 								{
-									"key": "activityName",
-									"value": null
+									"key": "name",
+									"value": "racing club"
 								},
 								{
-									"key": "LeisureCentreName",
-									"value": null
+									"key": "leisureCentreName",
+									"value": "SUjans gym"
 								}
 							]
 						}
@@ -193,11 +207,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:9080/leisureCentre/deleteAll",
+							"raw": "https://betterbackend.sujangcloud.uk/leisureCentre/deleteAll",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"betterbackend",
+								"sujangcloud",
+								"uk"
 							],
-							"port": "9080",
 							"path": [
 								"leisureCentre",
 								"deleteAll"
@@ -217,11 +233,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:9080/getDates",
+							"raw": "https://betterbackend.sujangcloud.uk/getDates",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"betterbackend",
+								"sujangcloud",
+								"uk"
 							],
-							"port": "9080",
 							"path": [
 								"getDates"
 							]
@@ -248,14 +266,22 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:9080/timeSlot/id",
+							"raw": "https://betterbackend.sujangcloud.uk/timeSlot/getAll?",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"betterbackend",
+								"sujangcloud",
+								"uk"
 							],
-							"port": "9080",
 							"path": [
 								"timeSlot",
-								"id"
+								"getAll"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
 							]
 						}
 					},
@@ -267,11 +293,13 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "localhost:9080/timeSlot/add?startTime&endTime&avalability&acivityDateId",
+							"raw": "https://betterbackend.sujangcloud.uk/timeSlot/add?startTime=12&endTime=12&availability=true&activityDateId=3",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"betterbackend",
+								"sujangcloud",
+								"uk"
 							],
-							"port": "9080",
 							"path": [
 								"timeSlot",
 								"add"
@@ -279,19 +307,19 @@
 							"query": [
 								{
 									"key": "startTime",
-									"value": null
+									"value": "12"
 								},
 								{
 									"key": "endTime",
-									"value": null
+									"value": "12"
 								},
 								{
-									"key": "avalability",
-									"value": null
+									"key": "availability",
+									"value": "true"
 								},
 								{
-									"key": "acivityDateId",
-									"value": null
+									"key": "activityDateId",
+									"value": "3"
 								}
 							]
 						}
@@ -304,11 +332,13 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "localhost:9080/book/activity?id=5&booked=true",
+							"raw": "https://betterbackend.sujangcloud.uk/book/activity?id=1&booked=false",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"betterbackend",
+								"sujangcloud",
+								"uk"
 							],
-							"port": "9080",
 							"path": [
 								"book",
 								"activity"
@@ -316,11 +346,11 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "5"
+									"value": "1"
 								},
 								{
 									"key": "booked",
-									"value": "true"
+									"value": "false"
 								}
 							]
 						}
