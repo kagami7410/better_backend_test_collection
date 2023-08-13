@@ -293,7 +293,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "https://betterbackend.sujangcloud.uk/timeSlot/add?startTime=12&endTime=12&availability=true&activityDateId=3",
+							"raw": "https://betterbackend.sujangcloud.uk/timeSlot/add?startTime=12&endTime=13&availability=false&activityDateId=5",
 							"protocol": "https",
 							"host": [
 								"betterbackend",
@@ -311,15 +311,15 @@
 								},
 								{
 									"key": "endTime",
-									"value": "12"
+									"value": "13"
 								},
 								{
 									"key": "availability",
-									"value": "true"
+									"value": "false"
 								},
 								{
 									"key": "activityDateId",
-									"value": "3"
+									"value": "5"
 								}
 							]
 						}
@@ -354,6 +354,40 @@
 								}
 							]
 						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get Users",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Add user",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "GET",
+						"header": []
 					},
 					"response": []
 				}
